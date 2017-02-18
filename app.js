@@ -31,7 +31,6 @@ app.get('/playlists', (req, res) => {
 });
 
 app.get('/playlists/:genre', (req, res) =>
- // console.log('getting all books');
   Playlist.findOne({
     genre: req.params.genre
     })
