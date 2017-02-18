@@ -52,7 +52,7 @@ app.post('/playlist', (req, res) => {
 
   newPlaylist.save((err, movie) => {
     if(err) {
-      res.send('error saving book');
+      res.send('error saving movie');
     } else {
       console.log(movie);
       res.send(movie);
